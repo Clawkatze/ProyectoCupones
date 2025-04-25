@@ -1,0 +1,14 @@
+.navbar-expand-lg{
+    background-color: #28a745;
+}
+
+.logo-white{
+   width: 200;
+   height: 50px;
+   margin-right: 100px;
+    
+}
+
+.navbar-nav{
+    color:white;
+}
