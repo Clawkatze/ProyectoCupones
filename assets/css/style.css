@@ -12,3 +12,15 @@
 .navbar-nav{
     color:white;
 }
+
+.card{
+    margin-left: 50px;
+    margin-right:35px;
+    margin-top:20px;
+}
+
+.img_carta{
+    height: 200px;
+    object-fit: cover; /
+
+}
