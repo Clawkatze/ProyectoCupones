@@ -1,10 +1,3 @@
-body {
-    font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
 .navbar-expand-lg {
     background-color: #28a745;
 }
@@ -13,79 +6,118 @@ body {
     color: white !important;
 }
 
-.navbar-nav{
+.navbar-nav {
     margin-left: auto;
 }
 
-.tour-info {
-    text-align: center;
-    padding: 50px;
-}
-
-.tour-img {
+.contenedor-tour {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+  }
+  
+  .titulo-tour {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contenedor-contenido {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .carousel {
+    flex: 1 1 60%;
+  }
+  
+  .carousel img {
     width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.carousel {
-    max-width: 800px;
-    margin: auto;
-}
-
-.carousel-item img {
     height: 400px;
     object-fit: cover;
-}
-
-.precio {
-    display: flex; /* Puedo distribuir el contenido sin la necesidad de utilizar posiciones absolutas */
-    justify-content: center;
-    gap: 50px; /* Espacio entre 2 numeros */
-    font-size: 24px;
-}
-
-.text-body-secondary {
-    text-decoration: line-through; /* Subraya el precio original*/
-    color: gray;
-}
-
-.numero-grande {
-    font-size: 30px;
-    color: #28a745;
-    font-weight: bold;
-}
-
-.btn-comprar, .btn-carro {
-    background-color: #28a745;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-body {
+    border-radius: 6px;
+  }
+  
+  .panel-lateral {
+    flex: 1 1 35%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    margin: 0;
-}
-
-main {
-    flex-grow: 1;
-}
-
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .precio {
+    text-align: center;
+  }
+  
+  .numero-grande {
+    font-size: 28px;
+    color: #0b8038;
+    font-weight: bold;
+  }
+  
+  .text-body-secondary {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .btn-comprar,
+  .btn-carro,
+  .btn-regalar {
+    width: 200px;
+    padding: 12px;
+    font-size: 15px;
+    background-color: #0b8038;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btn-carro {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .btn-comprar:hover,
+  .btn-carro:hover,
+  .btn-regalar:hover {
+    opacity: 0.9;
+  }
+  
+  .regalo-box {
+    background-color: #ffeef0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .regalo-box h4 {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #d33;
+  }
+  
+  .regalo-box ol {
+    margin: 0 0 10px 20px;
+    padding: 0;
+  }
+  
+  .vendidos {
+    font-size: 13px;
+    color: #666;
+  }
+  
 
 footer {
     background-color: #2ecc71;
     text-align: center;
     padding: 100px;
-    padding-bottom: 700px; /* Asegura espacio al final de la página */
+    padding-bottom: 700px;
     color: white;
 }
-
-
-/* Flexbox (flex) es mejor que estar usando float, inline-block y position:absolute*/
