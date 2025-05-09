@@ -1,1 +1,91 @@
-<link rel="stylesheet" href="/assets/css/san-pedro.css">
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar-expand-lg {
+    background-color: #28a745;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.tour-info {
+    text-align: center;
+    padding: 50px;
+}
+
+.tour-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel {
+    max-width: 800px;
+    margin: auto;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.precio {
+    display: flex; /* Puedo distribuir el contenido sin la necesidad de utilizar posiciones absolutas */
+    justify-content: center;
+    gap: 50px; /* Espacio entre 2 numeros */
+    font-size: 24px;
+}
+
+.text-body-secondary {
+    text-decoration: line-through; /* Subraya el precio original*/
+    color: gray;
+}
+
+.numero-grande {
+    font-size: 30px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.btn-comprar, .btn-carro {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+
+footer {
+    background-color: #2ecc71;
+    text-align: center;
+    padding: 100px;
+    padding-bottom: 700px; /* Asegura espacio al final de la página */
+    color: white;
+}
+
+
+/* Flexbox (flex) es mejor que estar usando float, inline-block y position:absolute*/
