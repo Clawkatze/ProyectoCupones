@@ -73,6 +73,12 @@
     color: #28a745;
 }
 
+.card-link {
+    text-decoration: none; /* Elimina el subrayado azul, resultado de hacer el card-link */
+    color: inherit; /* puedo mantener el color original del texto */
+    display: block; /* Puedo hacer que toda la tarjeta sea clickeable */
+}
+
 
 footer {
     margin-top: 110px;
