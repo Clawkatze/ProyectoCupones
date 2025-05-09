@@ -3,14 +3,24 @@
 }
 
 .logo-white{
-   width: 200;
+   width: 200px;
    height: 50px;
    margin-right: 100px;
     
 }
 
 .navbar-nav{
-    color:white;
+    margin-left: auto;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav .nav-link{
+    color: white !important; /* Esto me asegura de que se aplique el color blanco en el texto*/
 }
 
 .card{
@@ -27,4 +37,83 @@
 
 .container{
     padding: 30px;
+}
+
+.card-text{
+    color:#a0a7a2
+}
+
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.row {
+    padding: 20px 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.text-body-secondary{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.numero-grande{
+    font-size: 50px;
+    color: #28a745;
+}
+
+
+footer {
+    margin-top: 110px;
+    background-color: #2ecc71;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    width: 120%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.coupon-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-texto{
+    color: white;
 }
